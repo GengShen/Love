@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8" />
+<title>应用算法</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<style> 
+textarea 
+{ 
+    height:100%; 
+} 
+</style> 
+</head>
+<body>
+<pre>
+<code>
+    <TEXTAREA name="textarea" readonly="readonly" style="margin: 0px 2px; height: 704px; width: 940px;">
+#include <iostream>
+#include <vector>
+#include <string>
+namespace spi {
+    using namespace std;
+    vector<string> split(const string& st_from,const string& sp_)
+    //split() Created by Shen Keng on 14-10-6.
+    {
+        long sp_start=0;
+        long sp_end=0;
+        vector<string>result(0);
+        while((sp_end=st_from.find_first_of(sp_,sp_start))!=string::npos)
+        {
+            
+            result.push_back(st_from.substr(sp_start,sp_end-sp_start));
+            sp_start=sp_end;
+            sp_start+=sp_.length();
+        }
+        if (st_from.substr(sp_start).length()>0)  result.push_back(st_from.substr(sp_start));
+        return result;
+    }
+};
+    </TEXTAREA>
+</code>
+</pre>
+</body>
+</html>

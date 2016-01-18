@@ -1,0 +1,5 @@
+libraries:
+- name: requests
+  version: "2.4.1"
+- name: pylabs
+  version: 9
