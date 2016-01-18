@@ -7,7 +7,16 @@ import datetime
 import os.path
 
 def index(request):
-	#return render_to_response('index.html')
-	return render_to_response('js/functions.js')
+	return render_to_response('index.html')
+	#return render_to_response('js/functions.js')
 def statics(requests,x):
 	return render_to_response(x)
+
+def default(request):
+	return render_to_response('css/default.css')
+def jequery(request):
+	return render_to_response('js/jquery.js')
+def garden(request):
+	return render_to_response('js/garden.js')
+def functions(request):
+	return render_to_response('js/functions.js')
