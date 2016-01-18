@@ -13,10 +13,10 @@ def statics(requests,x):
 	return render_to_response(x)
 
 def default(request):
-	return render_to_response('css/default.css')
+	return HttpResponse('css/default.css')
 def jquery(request):
-	return render_to_response('js/jquery.js')
+	return HttpResponse('js/jquery.js')
 def garden(request):
-	return render_to_response('js/garden.js')
+	return HttpResponse('js/garden_dev.js')
 def functions(request):
-	return render_to_response('js/functions.js')
+	return HttpResponse('js/functions_dev.js')
