@@ -15,7 +15,7 @@ def statics(requests,x):
 	return render_to_response(x)
 
 def default(request):
-	f=open(os.path.join(base_dir,'css/default.css')).read()
+	f=open(os.path.join(base_dir,'css/default_dev.css')).read()
 	return HttpResponse(f,content_type="text/css")
 	#return render_to_response('css/default.css')
 def jquery(request):
