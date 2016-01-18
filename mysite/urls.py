@@ -5,7 +5,7 @@ from django.conf import settings
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns += patterns('',
     # Example:
     # (r'^mysite/', include('mysite.foo.urls')),
 
@@ -16,7 +16,7 @@ urlpatterns = patterns('',
     # (r'^admin/', include(admin.site.urls)),
     (r'^$', 'mysite.views.index'),
     (r'^med/$', 'mysite.views.med'),
-    (r'^alg/$', 'mysite.views.alg'),
-    (r'^demo/$', 'mysite.demo.views.showdemo'),
-    (r'^staticfiles/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATICFILES_DIRS, 'show_indexes': True}),
+    #(r'^alg/$', 'mysite.views.alg'),
+    #(r'^demo/$', 'mysite.demo.views.showdemo'),
+    (r'^staticfiles/(?P<path>.*)$','mysite.views.statics'),
 )
