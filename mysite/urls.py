@@ -17,5 +17,4 @@ urlpatterns = patterns('',
     (r'^med/$', 'mysite.views.med'),
     (r'^alg/$', 'mysite.views.alg'),
     (r'^demo/$', 'mysite.demo.views.showdemo'),
-    (r'^site_medias/(?P<path>.*)$','django.views.static.serve',
 )

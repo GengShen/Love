@@ -94,5 +94,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
+STATICFILES_DIRS = (
+    'templates',
+)
 
-STATICFILES_DIRS = ('mysite/templates',)
