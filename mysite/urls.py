@@ -20,3 +20,5 @@ urlpatterns = patterns('',
     #(r'^demo/$', 'mysite.demo.views.showdemo'),
     #(r'^staticfiles/(*.*)$','mysite.views.statics'),
 )
+
+urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
