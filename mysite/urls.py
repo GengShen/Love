@@ -5,7 +5,7 @@ from django.conf import settings
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns += patterns('',
+urlpatterns = patterns('',
     # Example:
     # (r'^mysite/', include('mysite.foo.urls')),
 
