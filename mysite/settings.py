@@ -96,6 +96,6 @@ INSTALLED_APPS = (
 )
 
 STATICFILES_DIRS = (
-    os.path.join(os.path.dirname(__file__)+'/templates',
+    os.path.join(os.path.dirname(__file__), 'templates'),
 )
 
