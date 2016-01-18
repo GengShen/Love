@@ -14,7 +14,7 @@ def statics(requests,x):
 
 def default(request):
 	return render_to_response('css/default.css')
-def jequery(request):
+def jquery(request):
 	return render_to_response('js/jquery.js')
 def garden(request):
 	return render_to_response('js/garden.js')
