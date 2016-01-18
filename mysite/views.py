@@ -16,17 +16,17 @@ def statics(requests,x):
 
 def default(request):
 	f=open(os.path.join(base_dir,'css/default.css')).read()
-	return f
+	return HttpResponse(f，mimetype="text/css")
 	#return render_to_response('css/default.css')
 def jquery(request):
 	f=open(os.path.join(base_dir,'js/jquery.js')).read()
-	return f
+	return HttpResponse(f,mimetype="text/javascript")
 	#return render_to_response('js/jquery.js')
 def garden(request):
 	f=open(os.path.join(base_dir,'js/garden_dev.js')).read()
-	return f
+	return HttpResponse(f,mimetype="text/javascript")
 	#return render_to_response('js/garden_dev.js')
 def functions(request):
 	f=open(os.path.join(base_dir,'js/functions_dev.js')).read()
-	return f
+	return HttpResponse(f,mimetype="text/javascript")
 	#return render_to_response('js/functions_dev.js')
