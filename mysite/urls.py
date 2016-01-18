@@ -19,5 +19,4 @@ urlpatterns = patterns('',
     (r'^alg/$', 'mysite.views.alg'),
     (r'^demo/$', 'mysite.demo.views.showdemo'),
     (r'^staticfiles/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATICFILES_DIRS, 'show_indexes': True}),
-
 )

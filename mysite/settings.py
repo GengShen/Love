@@ -95,6 +95,6 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
 )
 STATICFILES_DIRS = (
-    'templates',
+    'mysite/templates',
 )
 
