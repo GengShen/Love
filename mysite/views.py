@@ -11,4 +11,4 @@ def index(request):
 	return render_to_response('index.html')
 
 def statics(requests,x):
-	return HttpResponse(os.path.join(os.path.dirname(__file__), 'templates/'+x))
+	return render_to_response(os.path.join(os.path.dirname(__file__), 'templates/'+x))
