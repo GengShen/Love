@@ -6,7 +6,7 @@ import requests
 import datetime
 import os.path
 
-base_dir=os.path.dirname(__file__)+'templates/'
+base_dir=os.path.dirname(__file__)+'/templates/'
 
 def index(request):
 	return render_to_response('index.html')
