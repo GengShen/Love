@@ -17,4 +17,6 @@ urlpatterns = patterns('',
     (r'^med/$', 'mysite.views.med'),
     (r'^alg/$', 'mysite.views.alg'),
     (r'^demo/$', 'mysite.demo.views.showdemo'),
+    url(r'^staticfiles/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATICFILES_DIRS, 'show_indexes': True}),
+
 )
