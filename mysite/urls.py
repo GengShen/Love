@@ -15,10 +15,10 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # (r'^admin/', include(admin.site.urls)),
     (r'^$', 'mysite.views.index'),
-    (r'^media/css/default', 'mysite.views.default'),
-    (r'^media/js/jquery', 'mysite.views.jquery'),
-    (r'^media/js/garden', 'mysite.views.garden'),
-    (r'^media/js/functions','mysite.views.functions'),
+    (r'^medias/css/default', 'mysite.views.default'),
+    (r'^medias/js/jquery', 'mysite.views.jquery'),
+    (r'^medias/js/garden', 'mysite.views.garden'),
+    (r'^medias/js/functions','mysite.views.functions'),
 )
 
 #urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
