@@ -1,3 +1,5 @@
 the page for chunyi.
-             shen
-             the day before chunyi's birthday
+            
+ the day before chunyi's birthday.
+
+runing as the sinaapp
